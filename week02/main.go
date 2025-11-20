@@ -1,10 +1,12 @@
 package main
+
 import (
 	"fmt"
 	"net/http"
 )
+
 func main() {
-    http.HandleFunc("/hello", hellohandler) 
+	http.HandleFunc("/hello", hellohandler)
 
 	fmt.Println("Launch server...")
 	if err := http.ListenAndServe(":8080", nil); err != nil {

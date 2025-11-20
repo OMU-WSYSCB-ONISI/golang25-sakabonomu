@@ -1,1 +1,89 @@
-Sample Test File over Golang http.FileServer
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webシステム構築基礎 第2回課題</title>
+     <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            if (hours < 10) hours = '0' + hours;
+            if (minutes < 10) minutes = '0' + minutes;
+            if (seconds < 10) seconds = '0' + seconds;
+
+            var timeString = hours + ':' + minutes + ':' + seconds;
+            var el = document.getElementById('clock');
+            if (el) el.innerHTML = timeString;
+        }
+
+        // DOMが準備できてから1秒ごとに更新する
+        document.addEventListener('DOMContentLoaded', function() {
+            updateClock();
+            setInterval(updateClock, 1000);
+        });
+    </script>
+</head>
+<!-- <head> -->
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <title>Webシステム構築基礎 第2回課題</title> -->
+    <!-- <title>おすすめな食べ物</title> -->
+<!-- </head> -->
+
+<body>
+    <h1>現在時刻</h1>
+    <div id="clock" style="font-size: 40px; font-weight: bold; color: green;">
+        00:00:00
+    </div>
+    <h1>Webシステム構築基礎 第2回課題</h1>
+    <h1>おすすめの食べ物</h1>
+    <h1>坂本匠（AJA23037）</h1>
+    <div>
+        <img src="https://sakabonomu.github.io/omu-aja23037.github.io/food_shirasudon_10769.png" width="300" alt="しらす丼のイラスト">
+        <!-- <img src="https://illust8.com/wp-content/uploads/2020/09/food_shirasudon_10769.png" width="横幅" height="高さ" alt="説明文"> -->
+        <h2></h2>
+        <!-- <p><strong>指示:</strong> 下記のHTMLコメント部分に、あなたの自己紹介を書いてください。</p> -->
+        <!-- ここに自己紹介のHTMLを書いてください
+        例:-->
+        <h3>自己紹介</h3>
+        <p>名前: 坂本　匠</p>
+        <p>学籍番号: AJA23037</p>
+        <!-- <p>趣味: 映画鑑賞、旅行</p> -->
+
+        <!-- <p>✅ 完了したら、この課題は終了です</p> -->
+    </div>
+     <div>
+        <h2>シンプルながらも深い味わい。海からの恵みを味わう「しらすかけご飯」</h2>
+        <p><strong>　</strong> 忙しい日も、贅沢な気分になりたい日も、すべてを満たしてくれるのがしらすかけご飯です。炊きたてのご飯の上に、ふんわりとした釜揚げしらす、またはとろけるような生しらすをたっぷりと乗せるだけ。しらすの持つほのかな塩気と海の豊かな旨味が、温かいご飯の甘みと見事に調和します。</p>
+    </div>
+    <!-- <div> -->
+        <!-- <h2>📋 課題2: リスト作成</h2> -->
+        <!-- <p><strong>指示:</strong> 好きな食べ物を5つ、番号付きリスト（ol）で作成してください。</p> -->
+        <!-- ここに好きな食べ物のリストを作成してください -->
+        <!-- <ol> -->
+          <!-- <li>項目1</li>チャーハン -->
+          <!-- <li>項目2</li>ラーメン -->
+          <!-- <li>項目3</li>焼肉 -->
+          <!-- <li>項目4</li>しらすかけご飯 -->
+        　<!-- <li>項目5</li>カルボナーラ -->
+        <!-- </ol> -->
+
+    </div>
+    <div>
+        <!-- <h2>🔗 課題3: リンク作成</h2>
+        <p><strong>指示:</strong> 以下のリンクを作成してください：</p>
+        <ul>
+            <li>Google（新しいタブで開く）</li>
+            <li>GitHub（新しいタブで開く）</li>
+        </ul> -->
+      <!-- ここにリンクを作成してください -->
+        <!-- <a href="https://www.google.com/" target="_blank">Google</a> -->
+        <a href="second.html">2ページ目へ</a>
+    </div>
+</body>
+</html>
